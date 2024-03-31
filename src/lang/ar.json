@@ -1,0 +1,24 @@
+{
+  "global": {
+    "search": "ابحث هنا ..."
+  },
+  "sidebar": {
+    "account": "الحساب",
+    "bills": "الفواتير",
+    "dashboard": "لوحة التحكم",
+    "import": "الإستيراد",
+    "export": "التصدير",
+    "fbn": "طلبات FBN",
+    "statistics": "إحصاءات",
+    "competitors": "المنافسين",
+    "product-management": "ادارة المنتجات",
+    "settings": "الاعدادات",
+    "help": "مركز المساعدة",
+    "pages": "الصفحات",
+    "others": "اخرى"
+  },
+  "importPage": {
+    "title": "استيراد",
+    "button": "استيراد جديد"
+  }
+}
