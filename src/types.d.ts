@@ -34,3 +34,8 @@ type SidebarCollapseContextProps = {
   collapse: boolean;
   setCollapse: Dispatch<SetStateAction<boolean>>;
 };
+
+interface PaginationChevronProps extends ChildrenProp {
+  isMuted?: boolean;
+  handleClick: () => void;
+}

@@ -14,7 +14,7 @@ const TopBarSearch = () => {
       <Input
         type='text'
         placeholder={t('search')}
-        className='w-full rounded-lg border-2 bg-input indent-5 focus:border-primary focus:!ring-0'
+        className='w-full rounded-lg border-2 bg-input/25 indent-5 focus:border-primary focus:!ring-0 dark:bg-input'
         onChange={e => {
           console.log(e.target.value);
         }}

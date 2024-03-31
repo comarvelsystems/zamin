@@ -10,7 +10,7 @@ const Sidebar = () => {
     <aside
       className={cn(
         collapse && 'ltr:!-left-[270px] rtl:!-right-[270px]',
-        'fixed inset-0 h-screen w-[270px] overflow-x-auto bg-foreground p-8 transition-all',
+        'fixed inset-0 h-screen w-[270px] overflow-x-auto bg-black p-8 transition-all',
       )}
     >
       <SidebarLogo />

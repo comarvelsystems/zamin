@@ -26,7 +26,7 @@ const SidebarItems = () => {
             <AvatarFallback>AH</AvatarFallback>
           </Avatar>
           <div>
-            <p className='text-muted'>أحمد قاسم</p>
+            <p className='text-primary-foreground'>أحمد قاسم</p>
             <span className='text-muted-foreground'>Premium account</span>
           </div>
         </div>

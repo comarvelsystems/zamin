@@ -2,6 +2,12 @@
   "global": {
     "search": "ابحث هنا ..."
   },
+  "theme-mode": {
+    "title": "تبديل الثيم",
+    "light": "فاتح",
+    "dark": "غامق",
+    "system": "مطابق للنظام"
+  },
   "sidebar": {
     "account": "الحساب",
     "bills": "الفواتير",
@@ -17,8 +23,19 @@
     "pages": "الصفحات",
     "others": "اخرى"
   },
+  "pagination": {
+    "page": "الصفحة",
+    "selected": "تم تحديد",
+    "from": "من",
+    "rows": "صفوف"
+  },
   "importPage": {
     "title": "استيراد",
-    "button": "استيراد جديد"
+    "button": "استيراد جديد",
+    "modal": {
+      "title": "استيراد",
+      "content-title": "قم بسحب الملفات إلى هنا",
+      "content-text": "أو اضغط هنا لرفع الملف"
+    }
   }
 }

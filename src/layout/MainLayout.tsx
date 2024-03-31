@@ -19,17 +19,18 @@ const MainLayout = () => {
       className={cn(
         collapse && 'overflow-y-hidden',
         !collapse && 'overflow-hidden sm:overflow-y-hidden',
+        'h-screen',
       )}
     >
       <Sidebar />
-      <div
+      <section
         className={cn(
           !collapse && 'mr-[270px]',
           'w-full transition-all sm:w-auto',
         )}
       >
         <Outlet />
-      </div>
+      </section>
     </main>
   );
 };

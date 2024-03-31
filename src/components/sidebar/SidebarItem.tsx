@@ -20,7 +20,7 @@ const SidebarItem: FC<SidebarItemProps> = ({
         end
         className={({ isActive }) =>
           cn(
-            'flex-between w-full rounded-xl p-[10px] text-muted transition-colors hover:bg-primary',
+            'flex-between w-full rounded-xl p-[10px] text-primary-foreground transition-colors hover:bg-primary',
             isActive && 'bg-primary',
           )
         }

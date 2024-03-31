@@ -5,6 +5,7 @@ import Heading from '../Heading';
 import TopBarMenu from './TopBarMenu';
 import TopBarSearch from './TopBarSearch';
 import { TopBarProps } from '../../types';
+import { ModeToggle } from '../ModeToggle';
 
 const TopBar: FC<TopBarProps> = ({ title, children }) => {
   const { t } = useTranslation();
@@ -17,6 +18,7 @@ const TopBar: FC<TopBarProps> = ({ title, children }) => {
       </div>
 
       <div className='flex-items-center gap-4'>
+        <ModeToggle />
         <TopBarSearch />
         {children}
       </div>
