@@ -10,8 +10,8 @@ const TopBar: FC<TopBarProps> = ({ title, children }) => {
   const { t } = useTranslation();
 
   return (
-    <header className='flex-between border-b border-border bg-background px-10 py-6'>
-      <div className='flex-center gap-3'>
+    <header className='sm:flex-between flex flex-col gap-3 border-b border-border bg-background px-2 py-6 sm:flex-row sm:gap-0 sm:px-10'>
+      <div className='sm:flex-center flex gap-3'>
         <TopBarMenu />
         <Heading as='h1'>{t(title)}</Heading>
       </div>

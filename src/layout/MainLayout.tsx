@@ -15,9 +15,19 @@ const MainLayout = () => {
   }, [setCollapse]);
 
   return (
-    <main>
+    <main
+      className={cn(
+        collapse && 'overflow-y-hidden',
+        !collapse && 'overflow-hidden sm:overflow-y-hidden',
+      )}
+    >
       <Sidebar />
-      <div className={cn(!collapse && 'mr-[270px]', 'transition-all')}>
+      <div
+        className={cn(
+          !collapse && 'mr-[270px]',
+          'w-full transition-all sm:w-auto',
+        )}
+      >
         <Outlet />
       </div>
     </main>

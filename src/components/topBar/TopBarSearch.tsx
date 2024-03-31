@@ -7,7 +7,7 @@ const TopBarSearch = () => {
   const { t } = useTranslation('', { keyPrefix: 'global' });
 
   return (
-    <div className='relative w-64'>
+    <div className='relative basis-3/5 sm:w-64 sm:basis-auto'>
       <div className='absolute top-1/2 -translate-y-1/2 ltr:left-2 rtl:right-2'>
         <Search size={18} className='text-muted-foreground' />
       </div>

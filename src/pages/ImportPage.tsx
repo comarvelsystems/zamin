@@ -19,7 +19,7 @@ const ImportPage = () => {
     <div>
       <TopBar title='sidebar.import'>
         <Dialog>
-          <DialogTrigger className='flex-items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm text-muted'>
+          <DialogTrigger className='flex-center basis-2/5 gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm text-muted sm:basis-auto'>
             <CloudUpload size={18} />
             {t('button')}
           </DialogTrigger>
