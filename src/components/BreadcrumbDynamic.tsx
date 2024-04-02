@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Slash } from 'lucide-react';
 
@@ -14,9 +14,11 @@ import {
 
 const BreadcrumbDynamic = () => {
   const { pathname } = useLocation();
+  const { slug } = useParams();
   const { t } = useTranslation('', { keyPrefix: 'sidebar' });
 
   const crumbs = pathname.split('/').filter(crumb => crumb !== '');
+  let url = '';
 
   return (
     <Breadcrumb className='bg-background px-10 py-2.5'>
@@ -24,14 +26,18 @@ const BreadcrumbDynamic = () => {
         {crumbs.map((crumb, index) => {
           const lastIndex = index === crumbs.length - 1;
           const keyId = `${crumb}-${index}-${Math.random()}`;
+          const crumbText = t(crumb, { defaultValue: slug });
+          url += `/${crumb}`;
 
           return (
             <Fragment key={keyId}>
               <BreadcrumbItem>
                 {!lastIndex ? (
-                  <BreadcrumbLink href={`/${crumb}`}>{t(crumb)}</BreadcrumbLink>
+                  <BreadcrumbLink asChild>
+                    <Link to={url}>{crumbText}</Link>
+                  </BreadcrumbLink>
                 ) : (
-                  <BreadcrumbPage>{t(crumb)}</BreadcrumbPage>
+                  <BreadcrumbPage>{crumbText}</BreadcrumbPage>
                 )}
               </BreadcrumbItem>
 

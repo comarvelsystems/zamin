@@ -1,7 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 
 import { MainLayout } from './layout';
-import { ExportPage, FbnOrderPage, HomePage, ImportPage } from './pages';
+import {
+  ExportPage,
+  FbnOrderPage,
+  HomePage,
+  ImportFilePage,
+  ImportPage,
+} from './pages';
 import SideBarCollapseProvider from './context/sidebarCollapseContext';
 
 const App = () => {
@@ -16,7 +22,10 @@ const App = () => {
         }
       >
         <Route index element={<HomePage />} />
-        <Route path='import' element={<ImportPage />} />
+        <Route path='import'>
+          <Route index element={<ImportPage />} />
+          <Route path=':slug' element={<ImportFilePage />} />
+        </Route>
         <Route path='export' element={<ExportPage />} />
         <Route path='fbn-order' element={<FbnOrderPage />} />
       </Route>

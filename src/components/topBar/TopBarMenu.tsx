@@ -15,7 +15,7 @@ const TopBarMenu = () => {
       className='cursor-pointer rounded-sm p-1 text-foreground'
       onClick={handleCollapse}
     >
-      {collapse ? <X /> : <Menu />}
+      {collapse ? <Menu /> : <X />}
     </div>
   );
 };
